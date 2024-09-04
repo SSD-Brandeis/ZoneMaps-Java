@@ -9,25 +9,25 @@ guide you on what we expect when you implement the zonemaps. You can use this as
 scratch. You may require additional helper functions to satisfy the requirements of the project.
 
 ## Zone Map Header
-The zonemaps.h header file is a template that defines the basic components of a zone map data structure.
-It is required to implement the data structure using this template in a separate file named
-"zonemaps.cpp". You are free to modify certain components of the template to improve performance of the
+The ZoneMap.java file is a template that defines the basic components of a zone map data structure.
+It is required to implement the data structure using this template in same file. 
+You are free to modify certain components of the template to improve performance of the
 data structure, however the core functionality should remain the same. In your implementation, it is
 important to comment your code to highlight various design decisions and logic. 
 
 ## Testing 
-The main.cpp file provides a foundational testing framework expected for this project. Each workload* directory 
-contains two files (1) is `workload.dat` for inserts and (2) is either `point_queries.txt.` or `range_queries.txt`. 
-You are required to run the workloads, given in `workloads` directory, build the zone map, and benchmark point queries and range
+The Main.java file provides a foundational testing framework expected for this project. Each `workloads/W*` directory 
+contains three files (1) is `workload.dat` for inserts and (2) `point_queries.txt.` and (3) `range_queries.txt`.
+You are required to run the workloads, given in `workloads` directory (change the `W[number]`), build the zone map, and benchmark point queries and range
 queries. We have already provided a simple logic to benchmark the point query. You are required to
 implement parsing the range queries from`range_queries.txt` and benchmarking the range query
 performance. The execution times are to be written either into a log file or displayed onto the terminal
 along with other relevant details about the workload, such as: the input workload size, the number of
 queries.
 
-Compile all files using the "make" command.
+Compile all files using the "javac -d out *.java" command and run with "java -cp out Main".
 Once the implementation of zone maps is complete, you will be required to fill in the appropriate test
-call in the main.cpp file for the point/range queries. 
+call in the Main.java file for the point/range queries. 
 
 ## Contact
 
